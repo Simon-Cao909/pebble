@@ -1,5 +1,4 @@
-async function solve(equation, bounds) {
-
+async function solve(problem) {
     const response = await fetch(
         "http://localhost:8000/solve",
         {
@@ -9,13 +8,13 @@ async function solve(equation, bounds) {
                 "Content-Type": "application/json"
             },
 
-            body: JSON.stringify({
-                equation: equation
-            })
+            body: JSON.stringify(problem)
         }
     );
 
     const result = await response.json();
 
-    console.log(result);
+    console.log("PEBBLE response:", result);
 }
+
+export default solve;
