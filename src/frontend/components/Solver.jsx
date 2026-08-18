@@ -14,7 +14,7 @@ async function solve(problem) {
 
     const result = await response.json();
 
-    console.log("PEBBLE response:", result);
+    console.log("PEBIL response:", result);
 }
 
 export default solve;

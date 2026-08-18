@@ -37,7 +37,7 @@ function App() {
     return (
         <main>
             <header>
-                <h1>PEBBLE</h1>
+                <h1>PEBIL</h1>
                 <p>PDE Solver & Visualization</p>
             </header>
 
